@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARG CHN | Acompanamiento Comercial Entre Argentina y China</title>
+    <meta
+      name="description"
+      content="Acompanamiento comercial integral para importar desde China con validacion en origen, inspeccion real y negociacion directa."
+    />
+    <meta property="og:title" content="Tus aliados estrategicos en China" />
+    <meta
+      property="og:description"
+      content="Transformamos oportunidades en negocios concretos con presencia operativa en China y mirada comercial argentina."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#F7FAFF',
+              snow: '#FFFFFF',
+              mist: '#E8EEFF',
+              cloud: '#DCE7FF',
+              primary: '#2454E8',
+              primaryDeep: '#1A3EA8',
+              ink: '#1F2A44',
+              steel: '#4F5F86'
+            },
+            fontFamily: {
+              display: ['Manrope', 'sans-serif'],
+              body: ['Inter', 'sans-serif']
+            },
+            boxShadow: {
+              soft: '0 18px 50px rgba(29,78,216,0.14)',
+              card: '0 10px 28px rgba(23,62,168,0.08)',
+              glow: '0 18px 42px rgba(36,84,232,0.24)'
+            },
+            backgroundImage: {
+              grain:
+                'radial-gradient(circle at 8% 12%, rgba(147,197,253,.45), transparent 32%), radial-gradient(circle at 92% 4%, rgba(224,231,255,.95), transparent 33%), radial-gradient(circle at 50% 90%, rgba(191,219,254,.45), transparent 38%)'
+            }
+          }
+        }
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f7faff;
+      }
+
+      .glass {
+        background: linear-gradient(130deg, rgba(255, 255, 255, 0.82), rgba(232, 238, 255, 0.54));
+        border: 1px solid rgba(148, 163, 184, 0.26);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .brand-lockup {
+        display: inline-flex;
+        align-items: center;
+        gap: 0;
+      }
+
+      .brand-mark {
+        display: inline-flex;
+        height: 34px;
+        width: 34px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid rgba(59, 130, 246, 0.35);
+        background: linear-gradient(135deg, rgba(36, 84, 232, 0.16), rgba(191, 219, 254, 0.7));
+        color: #1a3ea8;
+        font-family: 'Manrope', sans-serif;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        box-shadow: 0 8px 18px rgba(36, 84, 232, 0.14);
+      }
+
+      .brand-word {
+        font-family: 'Manrope', sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        color: #1a3ea8;
+        text-wrap: balance;
+      }
+
+      .brand-word .accent {
+        color: #2454e8;
+      }
+
+      .brand-word .light {
+        color: #5a78db;
+        font-weight: 700;
+      }
+
+      .brand-sub {
+        margin-top: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        color: #2454e8;
+        line-height: 1;
+      }
+
+      .brand-lockup::after {
+        content: '';
+        display: block;
+        margin-top: 7px;
+        width: 54%;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(36, 84, 232, 0.8), rgba(147, 197, 253, 0));
+        transition: width 260ms ease;
+      }
+
+      .brand-lockup:hover::after {
+        width: 78%;
+      }
+
+      .brand-lockup-minimal {
+        display: inline-flex;
+        flex-direction: column;
+        line-height: 1;
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: right;
+        background: linear-gradient(90deg, #2454e8, #93c5fd);
+        transition: transform 320ms ease;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 700ms ease, transform 700ms ease;
+      }
+
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .stagger > * {
+        opacity: 0;
+        transform: translateY(26px);
+      }
+
+      .stagger.in > * {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 620ms ease, transform 620ms ease;
+      }
+
+      .stagger.in > *:nth-child(1) {
+        transition-delay: 60ms;
+      }
+      .stagger.in > *:nth-child(2) {
+        transition-delay: 130ms;
+      }
+      .stagger.in > *:nth-child(3) {
+        transition-delay: 200ms;
+      }
+      .stagger.in > *:nth-child(4) {
+        transition-delay: 270ms;
+      }
+      .stagger.in > *:nth-child(5) {
+        transition-delay: 340ms;
+      }
+      .stagger.in > *:nth-child(6) {
+        transition-delay: 410ms;
+      }
+
+      .hero-art {
+        animation: zoomFloat 24s ease-in-out infinite alternate;
+      }
+
+      @keyframes zoomFloat {
+        from {
+          transform: scale(1.03) translateY(0px);
+        }
+        to {
+          transform: scale(1.12) translateY(-10px);
+        }
+      }
+
+      .marquee {
+        display: flex;
+        width: max-content;
+        animation: slide 36s linear infinite;
+      }
+
+      .marquee:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .parallax {
+        will-change: transform;
+      }
+
+      .timeline-line {
+        width: 0;
+        transition: width 1.2s cubic-bezier(0.2, 0.75, 0.2, 1);
+      }
+
+      .timeline-line.in {
+        width: 100%;
+      }
+
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-item summary {
+        list-style: none;
+      }
+
+      .faq-item .chev {
+        transition: transform 260ms ease;
+      }
+
+      .faq-item[open] .chev {
+        transform: rotate(180deg);
+      }
+
+      .whats-float {
+        animation: floatIn 700ms ease both;
+      }
+
+      @keyframes floatIn {
+        from {
+          opacity: 0;
+          transform: translateY(14px) scale(0.92);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .whats-float::before {
+        content: '';
+        position: absolute;
+        inset: -7px;
+        border-radius: 999px;
+        border: 1px solid rgba(37, 211, 102, 0.44);
+        opacity: 0;
+        transition: opacity 280ms ease, transform 280ms ease;
+        transform: scale(0.9);
+      }
+
+      .whats-float:hover::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .pattern::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: radial-gradient(#2454e8 0.6px, transparent 0.6px);
+        background-size: 6px 6px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-paper text-ink font-body antialiased">
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 border-b border-blue-100/80 bg-white/75 backdrop-blur-xl transition-all duration-300"
+    >
+      <div class="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6">
+        <a href="#top" class="brand-lockup brand-lockup-minimal" aria-label="Inicio EXportARG">
+          <span class="brand-word">EX<span class="accent">port</span><span class="light">ARG</span></span>
+          <span class="brand-sub">ARG - CHN</span>
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium text-steel lg:flex">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+          <a class="nav-link" href="#diferenciales">Diferenciales</a>
+          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link" href="#proceso">Proceso</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+        </nav>
+
+        <div class="hidden items-center gap-3 lg:flex">
+          <a
+            href="https://calendly.com/"
+            target="_blank"
+            rel="noreferrer"
+            class="rounded-full border border-blue-300 px-4 py-2 text-sm font-semibold text-primaryDeep transition hover:border-primary hover:bg-blue-50"
+            >Agendar llamada</a
+          >
+          <a
+            href="https://wa.me/5490000000000?text=Hola%2C%20quiero%20asesoramiento%20para%20importar%20desde%20China"
+            target="_blank"
+            rel="noreferrer"
+            class="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-primaryDeep"
+            >Hablar por WhatsApp</a
+          >
+        </div>
+
+        <button
+          id="menu-toggle"
+          class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-200 bg-white text-primaryDeep lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="max-h-0 overflow-hidden border-t border-blue-100 bg-white transition-all duration-300 lg:hidden">
+        <div class="mx-auto grid max-w-7xl gap-1 px-4 py-3 sm:px-6">
+          <a class="rounded-lg px-3 py-2 text-steel transition hover:bg-mist hover:text-primaryDeep" href="#nosotros">Nosotros</a>
+          <a class="rounded-lg px-3 py-2 text-steel transition hover:bg-mist hover:text-primaryDeep" href="#diferenciales">Diferenciales</a>
+          <a class="rounded-lg px-3 py-2 text-steel transition hover:bg-mist hover:text-primaryDeep" href="#servicios">Servicios</a>
+          <a class="rounded-lg px-3 py-2 text-steel transition hover:bg-mist hover:text-primaryDeep" href="#proceso">Proceso</a>
+          <a class="rounded-lg px-3 py-2 text-steel transition hover:bg-mist hover:text-primaryDeep" href="#faq">FAQ</a>
+          <div class="mt-3 grid gap-2 border-t border-blue-100 pt-3">
+            <a
+              href="https://calendly.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl border border-blue-300 px-4 py-2.5 text-center text-sm font-semibold text-primaryDeep"
+              >Agendar llamada</a
+            >
+            <a
+              href="https://wa.me/5490000000000?text=Hola%2C%20quiero%20asesoramiento%20para%20importar%20desde%20China"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl bg-primary px-4 py-2.5 text-center text-sm font-semibold text-white"
+              >Hablar por WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="relative overflow-hidden pt-20">
+        <div class="absolute inset-0 -z-20 bg-grain"></div>
+
+        <div class="border-b border-blue-100/80 bg-white/65 py-4">
+          <div class="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6">
+            <div class="marquee gap-4">
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1517309230475-6736d926b979?auto=format&fit=crop&w=1200&q=80" alt="Distrito financiero en China" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Presencia en China</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=80" alt="Fabrica y produccion" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Validacion en origen</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Logistica y puerto" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Inspeccion previa</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Reunion de negocios" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Negociacion directa</figcaption>
+              </figure>
+
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1517309230475-6736d926b979?auto=format&fit=crop&w=1200&q=80" alt="Distrito financiero en China" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Presencia en China</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=80" alt="Fabrica y produccion" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Validacion en origen</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Logistica y puerto" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Inspeccion previa</figcaption>
+              </figure>
+              <figure class="group relative h-28 w-[18rem] shrink-0 overflow-hidden rounded-2xl border border-blue-200/80 shadow-card">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80" alt="Reunion de negocios" />
+                <figcaption class="absolute left-2 top-2 rounded-full bg-white/85 px-2.5 py-1 text-xs font-semibold text-primaryDeep">Negociacion directa</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden pb-16 pt-12 sm:pb-20 sm:pt-14">
+        <img
+          src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1800&q=80"
+          alt="Equipo profesional de comercio internacional"
+          class="hero-art parallax absolute inset-0 -z-20 h-full w-full object-cover"
+          data-speed="0.06"
+        />
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/45 via-white/78 to-paper"></div>
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-8">
+          <div class="reveal glass pattern relative rounded-3xl p-7 shadow-soft sm:p-10 lg:col-span-8">
+            <p class="inline-flex rounded-full border border-blue-300 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+              Operando en Canton desde 2024
+            </p>
+
+            <h1 class="mt-5 font-display text-4xl font-extrabold leading-tight text-primaryDeep sm:text-5xl xl:text-6xl">
+              Tus aliados estrategicos en China
+            </h1>
+
+            <p class="mt-4 max-w-2xl text-base text-steel sm:text-lg">
+              Transformamos oportunidades en negocios concretos. Acompanamos tu importacion de punta a punta con validacion real, gestion profesional y seguimiento local en origen.
+            </p>
+
+            <div class="mt-6 grid gap-2 text-sm text-primaryDeep sm:grid-cols-2">
+              <p class="rounded-xl border border-blue-200 bg-white px-3 py-2">Validacion de proveedores</p>
+              <p class="rounded-xl border border-blue-200 bg-white px-3 py-2">Inspeccion en fabrica</p>
+              <p class="rounded-xl border border-blue-200 bg-white px-3 py-2">Negociacion directa</p>
+              <p class="rounded-xl border border-blue-200 bg-white px-3 py-2">Acompanamiento integral</p>
+            </div>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://wa.me/5490000000000?text=Hola%2C%20quiero%20importar%20desde%20China%20con%20acompanamiento%20completo"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-primaryDeep"
+                >Hablar por WhatsApp
+                <span aria-hidden="true">-></span></a
+              >
+              <a
+                href="https://calendly.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center justify-center rounded-xl border border-blue-300 bg-white px-6 py-3 text-base font-semibold text-primaryDeep transition hover:bg-mist"
+                >Agendar llamada</a
+              >
+            </div>
+          </div>
+
+          <aside class="stagger reveal grid gap-4 lg:col-span-4">
+            <article class="rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Respuesta</p>
+              <p class="mt-1 text-2xl font-extrabold text-primaryDeep">< 24 hs</p>
+              <p class="mt-1 text-sm text-steel">Primer diagnostico y plan inicial sin compromiso.</p>
+            </article>
+            <article class="rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Operacion real</p>
+              <p class="mt-1 text-2xl font-extrabold text-primaryDeep">China + Argentina</p>
+              <p class="mt-1 text-sm text-steel">Contexto local en origen y lectura comercial del mercado argentino.</p>
+            </article>
+            <article class="rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Riesgo</p>
+              <p class="mt-1 text-2xl font-extrabold text-primaryDeep">Controlado</p>
+              <p class="mt-1 text-sm text-steel">Estandares de validacion documental y de calidad antes de embarcar.</p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section id="nosotros" class="reveal mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+        <div class="grid items-center gap-8 lg:grid-cols-12">
+          <article class="glass rounded-3xl p-6 shadow-soft sm:p-8 lg:col-span-7">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <img
+                class="h-20 w-20 rounded-full border-2 border-primary object-cover"
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=240&q=80"
+                alt="Equipo de ARG CHN"
+              />
+              <div>
+                <p class="font-display text-2xl font-extrabold text-primaryDeep">Equipo Binacional ARG CHN</p>
+                <p class="text-sm text-steel">Economista + Abogado (UNC) + operacion en origen</p>
+              </div>
+            </div>
+
+            <p class="mt-5 text-steel">
+              No solo mostramos credenciales: convertimos experiencia en decisiones de negocio. Analizamos rentabilidad real, negociamos condiciones y ordenamos el frente documental para que importes con respaldo.
+            </p>
+
+            <div class="mt-5 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-xl border border-blue-200 bg-white p-3">
+                <p class="text-sm font-semibold text-primaryDeep">Economia aplicada</p>
+                <p class="mt-1 text-xs text-steel">Margenes, costos y estructura financiera.</p>
+              </div>
+              <div class="rounded-xl border border-blue-200 bg-white p-3">
+                <p class="text-sm font-semibold text-primaryDeep">Respaldo legal</p>
+                <p class="mt-1 text-xs text-steel">Documentacion y mitigacion contractual.</p>
+              </div>
+              <div class="rounded-xl border border-blue-200 bg-white p-3">
+                <p class="text-sm font-semibold text-primaryDeep">Operacion local</p>
+                <p class="mt-1 text-xs text-steel">Validacion y seguimiento en China.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="stagger reveal grid gap-4 lg:col-span-5">
+            <article class="rounded-2xl border border-blue-200 bg-white p-4 shadow-card">
+              <p class="text-sm font-semibold text-primaryDeep">Idioma y cultura</p>
+              <p class="mt-1 text-sm text-steel">Comunicacion en espanol y negociacion local para evitar costos por interpretaciones incorrectas.</p>
+            </article>
+            <article class="rounded-2xl border border-blue-200 bg-white p-4 shadow-card">
+              <p class="text-sm font-semibold text-primaryDeep">Filtro de riesgo</p>
+              <p class="mt-1 text-sm text-steel">Validamos proveedor, capacidad y consistencia antes de cualquier compromiso de compra.</p>
+            </article>
+            <article class="rounded-2xl border border-blue-200 bg-white p-4 shadow-card">
+              <p class="text-sm font-semibold text-primaryDeep">Acompanamiento real</p>
+              <p class="mt-1 text-sm text-steel">No delegamos: gestionamos cada etapa junto a tu equipo hasta el envio final.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="diferenciales" class="relative overflow-hidden bg-gradient-to-br from-primaryDeep to-primary py-16 text-white sm:py-20">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #bfdbfe 0, transparent 30%), radial-gradient(circle at 80% 80%, #dbeafe 0, transparent 30%);"></div>
+        <div class="reveal mx-auto grid max-w-7xl gap-5 px-4 sm:px-6 lg:grid-cols-3">
+          <article class="rounded-2xl border border-white/25 bg-white/10 p-6 backdrop-blur-sm">
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-blue-100">Diferencial 01</p>
+            <h3 class="mt-2 text-xl font-bold">Presencia real en China</h3>
+            <p class="mt-2 text-sm text-blue-100">Verificacion in situ, visitas a fabrica y seguimiento en origen.</p>
+          </article>
+          <article class="rounded-2xl border border-white/25 bg-white/10 p-6 backdrop-blur-sm">
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-blue-100">Diferencial 02</p>
+            <h3 class="mt-2 text-xl font-bold">Acompanamiento en espanol</h3>
+            <p class="mt-2 text-sm text-blue-100">Comunicacion clara, decisiones rapidas y sin capas innecesarias.</p>
+          </article>
+          <article class="rounded-2xl border border-white/25 bg-white/10 p-6 backdrop-blur-sm">
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-blue-100">Diferencial 03</p>
+            <h3 class="mt-2 text-xl font-bold">Vision comercial argentina</h3>
+            <p class="mt-2 text-sm text-blue-100">Compramos pensando en rotacion, margen y continuidad de negocio.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">Comparativa real</p>
+          <h2 class="mt-2 font-display text-3xl font-extrabold text-primaryDeep sm:text-4xl">Importar solo vs importar con acompanamiento profesional</h2>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl border border-blue-200 bg-white shadow-soft">
+          <div class="grid bg-mist/50 px-6 py-4 text-sm font-semibold text-primaryDeep sm:grid-cols-2">
+            <p>Importar solo</p>
+            <p>Importar con ARG CHN</p>
+          </div>
+
+          <div class="grid border-t border-blue-100 sm:grid-cols-2">
+            <div class="border-b border-blue-100 p-5 text-sm text-steel sm:border-r">Proveedor no validado y riesgo de fraude.</div>
+            <div class="border-b border-blue-100 p-5 text-sm text-ink">Proveedor verificado con validacion documental y operativa.</div>
+          </div>
+          <div class="grid border-t border-blue-100 sm:grid-cols-2">
+            <div class="border-b border-blue-100 p-5 text-sm text-steel sm:border-r">Muestra prometedora pero entrega incierta.</div>
+            <div class="border-b border-blue-100 p-5 text-sm text-ink">Inspeccion en fabrica antes de embarque.</div>
+          </div>
+          <div class="grid border-t border-blue-100 sm:grid-cols-2">
+            <div class="border-b border-blue-100 p-5 text-sm text-steel sm:border-r">Barrera de idioma y negociacion improvisada.</div>
+            <div class="border-b border-blue-100 p-5 text-sm text-ink">Negociacion local directa con objetivos claros.</div>
+          </div>
+          <div class="grid border-t border-blue-100 sm:grid-cols-2">
+            <div class="p-5 text-sm text-steel sm:border-r sm:border-blue-100">Documentacion confusa y decisiones tardias.</div>
+            <div class="p-5 text-sm text-ink">Seguimiento ordenado y trazabilidad de cada etapa.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+        <div class="reveal mb-10 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">Servicios</p>
+          <h2 class="mt-2 font-display text-3xl font-extrabold text-primaryDeep sm:text-4xl">Cobertura integral para importar con control</h2>
+        </div>
+
+        <div class="stagger grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft xl:col-span-1 xl:row-span-2">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M20 20l-3.2-3.2"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-primaryDeep">Busqueda de proveedores</h3>
+            <p class="mt-2 text-sm text-steel">Detectamos fabricantes serios y alineados a tu producto, volumen y objetivo comercial.</p>
+          </article>
+
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18"></path><path d="M5 21V9l7-5 7 5v12"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-primaryDeep">Visitas a fabricas</h3>
+            <p class="mt-2 text-sm text-steel">Evaluamos procesos y capacidad real en planta.</p>
+          </article>
+
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-primaryDeep">Inspeccion de calidad</h3>
+            <p class="mt-2 text-sm text-steel">Controlamos lotes y especificaciones antes de despacho.</p>
+          </article>
+
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 7h13l4 4v6H3z"></path><path d="M16 7v4h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-primaryDeep">Logistica internacional</h3>
+            <p class="mt-2 text-sm text-steel">Coordinacion de tiempos, documentos y envio.</p>
+          </article>
+
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v18"></path><path d="M17 8c0-1.7-2.2-3-5-3S7 6.3 7 8s2.2 3 5 3 5 1.3 5 3-2.2 3-5 3-5-1.3-5-3"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-primaryDeep">Gestion financiera</h3>
+            <p class="mt-2 text-sm text-steel">Asistencia en pagos, estructura y control de flujo.</p>
+          </article>
+
+          <article class="group rounded-3xl border border-blue-200 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-soft">
+            <div class="mb-4 inline-flex rounded-xl bg-mist p-3 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 16l7-7 5 5 6-6"></path><path d="M21 10V4h-6"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-primaryDeep">Viajes de negocios</h3>
+            <p class="mt-2 text-sm text-steel">Acompanamiento en ferias, rondas y reuniones clave.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proceso" class="reveal bg-mist/55 py-16 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="mb-10 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">Proceso</p>
+            <h2 class="mt-2 font-display text-3xl font-extrabold text-primaryDeep sm:text-4xl">Un sistema claro para importar sin improvisar</h2>
+          </div>
+
+          <div class="rounded-3xl border border-blue-200 bg-white p-6 shadow-soft sm:p-8">
+            <div class="relative mb-8 hidden h-1 rounded-full bg-blue-100 md:block">
+              <div class="timeline-line absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-primary to-blue-400"></div>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-6">
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">01</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Nos contactas</p>
+                <p class="mt-1 text-xs text-steel">Entendemos objetivo, rubro y volumen.</p>
+              </article>
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">02</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Buscamos proveedor</p>
+                <p class="mt-1 text-xs text-steel">Seleccion con criterios tecnicos y comerciales.</p>
+              </article>
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">03</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Validamos</p>
+                <p class="mt-1 text-xs text-steel">Chequeo documental y operativo.</p>
+              </article>
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">04</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Negociamos</p>
+                <p class="mt-1 text-xs text-steel">Precio, condiciones y plazos realistas.</p>
+              </article>
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">05</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Inspeccionamos</p>
+                <p class="mt-1 text-xs text-steel">Control de calidad previo al envio.</p>
+              </article>
+              <article class="rounded-2xl border border-blue-200 bg-snow p-4">
+                <p class="text-xs font-semibold text-primary">06</p>
+                <p class="mt-1 text-sm font-semibold text-primaryDeep">Enviamos</p>
+                <p class="mt-1 text-xs text-steel">Seguimiento logistico hasta destino.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="casos" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+        <div class="reveal mb-10 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">Resultados logrados</p>
+          <h2 class="mt-2 font-display text-3xl font-extrabold text-primaryDeep sm:text-4xl">Casos de trabajo con impacto real</h2>
+        </div>
+
+        <div class="stagger grid gap-5 lg:grid-cols-3">
+          <article class="rounded-3xl border border-blue-200 bg-white p-6 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-primary">Retail | Cordoba</p>
+            <h3 class="mt-2 text-lg font-bold text-primaryDeep">Escalado de 10.000 unidades</h3>
+            <p class="mt-2 text-sm text-steel">Se redujeron desvíos de calidad y se estandarizo la reposicion mensual con proveedor verificado.</p>
+          </article>
+          <article class="rounded-3xl border border-blue-200 bg-white p-6 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-primary">Mayorista | Buenos Aires</p>
+            <h3 class="mt-2 text-lg font-bold text-primaryDeep">Cambio de proveedor critico</h3>
+            <p class="mt-2 text-sm text-steel">Se reemplazo una cadena inestable por fabrica auditada con mejor plazo y trazabilidad documental.</p>
+          </article>
+          <article class="rounded-3xl border border-blue-200 bg-white p-6 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-primary">Distribucion | Rosario</p>
+            <h3 class="mt-2 text-lg font-bold text-primaryDeep">Optimización de costo total</h3>
+            <p class="mt-2 text-sm text-steel">Negociacion local en China con mejora de margen y disminucion de desajustes en entrega.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="reveal mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:py-16">
+        <div class="mb-8 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">FAQ</p>
+          <h2 class="mt-2 font-display text-3xl font-extrabold text-primaryDeep sm:text-4xl">Preguntas frecuentes antes de empezar</h2>
+        </div>
+
+        <div class="grid gap-3">
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card" open>
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Trabajan con cualquier rubro?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Trabajamos con rubros donde podamos validar proveedor y calidad con criterios objetivos. Evaluamos cada caso antes de avanzar.</p>
+          </details>
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Pueden validar una fabrica antes de comprar?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Si. Revisamos documentacion legal, actividad real y consistencia operativa en origen para reducir riesgos de fraude o incumplimiento.</p>
+          </details>
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Ayudan con muestras y control de calidad?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Si. Gestionamos muestras y realizamos inspeccion previa a embarque para comprobar que el lote respete lo acordado.</p>
+          </details>
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Acompanan viajes de negocios a China?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Si. Coordinamos agenda comercial, visitas a fabricas y asistencia en reuniones para maximizar cada viaje.</p>
+          </details>
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Pueden asistir en pagos internacionales?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Te acompanamos en estructura de pagos y orden financiero para evitar errores operativos y mejorar previsibilidad.</p>
+          </details>
+          <details class="faq-item rounded-2xl border border-blue-200 bg-white p-5 shadow-card">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left font-semibold text-primaryDeep">
+              Cual es el primer paso para empezar?
+              <span class="chev text-primary">⌄</span>
+            </summary>
+            <p class="mt-2 text-sm text-steel">Nos contas que queres importar por WhatsApp o videollamada. Hacemos un diagnostico inicial y te proponemos el plan de accion.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden px-4 pb-16 pt-10 sm:px-6 lg:pb-24">
+        <div class="absolute left-1/2 top-1/2 -z-10 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-200/60 blur-[130px]"></div>
+
+        <div class="reveal mx-auto max-w-5xl rounded-[2rem] border border-blue-300 bg-gradient-to-br from-primary to-primaryDeep p-8 text-white shadow-glow sm:p-12">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-100">Siguiente paso</p>
+          <h2 class="mt-3 font-display text-3xl font-extrabold sm:text-5xl">Empeza a importar sin riesgos</h2>
+          <p class="mt-4 max-w-3xl text-white/90">
+            Primera videollamada sin costo. Contanos que queres importar y analizamos tu caso sin compromiso.
+          </p>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://wa.me/5490000000000?text=Hola%2C%20quiero%20analizar%20mi%20importacion%20desde%20China"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl bg-white px-6 py-3 text-center font-semibold text-primaryDeep transition hover:-translate-y-0.5 hover:bg-blue-50"
+              >Hablar por WhatsApp</a
+            >
+            <a
+              href="https://calendly.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl border border-white/70 bg-white/20 px-6 py-3 text-center font-semibold text-white transition hover:bg-white/30"
+              >Agendar llamada</a
+            >
+          </div>
+
+          <div class="mt-6 grid gap-2 text-sm text-blue-100 sm:grid-cols-3">
+            <p class="rounded-xl border border-white/25 bg-white/10 px-3 py-2">Respuesta rapida</p>
+            <p class="rounded-xl border border-white/25 bg-white/10 px-3 py-2">Diagnostico inicial</p>
+            <p class="rounded-xl border border-white/25 bg-white/10 px-3 py-2">Acompanamiento real</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-blue-200 bg-white py-12">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-12">
+        <div class="md:col-span-5">
+          <div class="brand-lockup brand-lockup-minimal">
+            <span class="brand-word">EX<span class="accent">port</span><span class="light">ARG</span></span>
+            <span class="brand-sub">ARG - CHN</span>
+          </div>
+          <p class="mt-3 max-w-md text-sm text-steel">
+            Acompanamiento comercial entre Argentina y China para importar con criterio profesional, validacion en origen y seguimiento integral.
+          </p>
+        </div>
+
+        <div class="md:col-span-3">
+          <p class="text-sm font-semibold uppercase tracking-[0.12em] text-primary">Navegacion</p>
+          <ul class="mt-3 grid gap-2 text-sm text-steel">
+            <li><a class="transition hover:text-primaryDeep" href="#nosotros">Nosotros</a></li>
+            <li><a class="transition hover:text-primaryDeep" href="#servicios">Servicios</a></li>
+            <li><a class="transition hover:text-primaryDeep" href="#proceso">Proceso</a></li>
+            <li><a class="transition hover:text-primaryDeep" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <p class="text-sm font-semibold uppercase tracking-[0.12em] text-primary">Contacto</p>
+          <ul class="mt-3 grid gap-2 text-sm text-steel">
+            <li>WhatsApp: +54 9 0000 000000</li>
+            <li>Email: hola@argchn.com</li>
+            <li>Operacion: China + Argentina</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5490000000000?text=Hola%2C%20quiero%20importar%20desde%20China"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="WhatsApp"
+      class="whats-float fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-soft transition hover:-translate-y-0.5"
+    >
+      <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M19.05 4.94A10 10 0 003.24 17.56L2 22l4.56-1.2A10 10 0 1019.05 4.94zm-7.07 15.36a8.28 8.28 0 01-4.21-1.15l-.3-.18-2.7.7.72-2.63-.2-.32a8.29 8.29 0 1114.69-4.38 8.3 8.3 0 01-8 7.96z"></path>
+        <path d="M16.68 13.86c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.57.13-.17.25-.65.8-.8.96-.15.17-.3.19-.56.07-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.76-.15-.25-.02-.39.11-.52.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.87-.2-.49-.4-.42-.57-.43h-.48c-.17 0-.45.06-.68.32-.23.25-.9.88-.9 2.14s.92 2.47 1.05 2.64c.13.17 1.8 2.75 4.35 3.86.61.26 1.08.42 1.45.54.61.19 1.16.16 1.6.1.49-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.19-.06-.11-.22-.17-.47-.3z"></path>
+      </svg>
+    </a>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = [...document.querySelectorAll('nav a.nav-link')];
+      const sections = [...document.querySelectorAll('section[id]')];
+      const animated = document.querySelectorAll('.reveal, .stagger, .timeline-line');
+      const parallaxTargets = document.querySelectorAll('.parallax');
+      const header = document.getElementById('site-header');
+
+      function toggleMenu() {
+        const open = mobileMenu.style.maxHeight && mobileMenu.style.maxHeight !== '0px';
+        if (open) {
+          mobileMenu.style.maxHeight = '0px';
+          menuToggle.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+          menuToggle.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      menuToggle?.addEventListener('click', toggleMenu);
+      mobileMenu?.querySelectorAll('a').forEach((link) =>
+        link.addEventListener('click', () => {
+          mobileMenu.style.maxHeight = '0px';
+          menuToggle.setAttribute('aria-expanded', 'false');
+        })
+      );
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in');
+            }
+          });
+        },
+        { threshold: 0.16 }
+      );
+
+      animated.forEach((item) => observer.observe(item));
+
+      function updateActiveLink() {
+        const marker = window.scrollY + 180;
+        let currentId = '';
+
+        sections.forEach((sec) => {
+          if (marker >= sec.offsetTop && marker < sec.offsetTop + sec.offsetHeight) {
+            currentId = sec.id;
+          }
+        });
+
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute('href') === `#${currentId}`;
+          link.classList.toggle('active', isActive);
+          link.classList.toggle('text-primaryDeep', isActive);
+        });
+      }
+
+      function updateHeaderState() {
+        if (window.scrollY > 18) {
+          header.classList.add('shadow-card');
+          header.classList.add('bg-white/90');
+        } else {
+          header.classList.remove('shadow-card');
+          header.classList.remove('bg-white/90');
+        }
+      }
+
+      function updateParallax() {
+        const y = window.scrollY;
+        parallaxTargets.forEach((target) => {
+          const speed = Number(target.dataset.speed || 0.05);
+          target.style.transform = `translateY(${y * speed}px) scale(1.08)`;
+        });
+      }
+
+      window.addEventListener('scroll', () => {
+        updateActiveLink();
+        updateHeaderState();
+        updateParallax();
+      });
+
+      updateActiveLink();
+      updateHeaderState();
+      updateParallax();
+    </script>
+  </body>
+</html>
